@@ -1,0 +1,6 @@
+This asset is governed by the Asset Store EULA; however, the following components are governed by the licenses indicated below: 
+A. All graphics assets under the Sprite folder and its subfolders are from the Kenney graphical assets packs (kenney.nl) under CC0 1.0 Universal
+    https://creativecommons.org/publicdomain/zero/1.0/
+    The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.
+    You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
+

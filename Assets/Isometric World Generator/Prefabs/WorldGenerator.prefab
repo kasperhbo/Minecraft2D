@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1648382278930468}
+  m_IsPrefabParent: 1
+--- !u!1 &1648382278930468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4885903063103794}
+  - component: {fileID: 114515431822514804}
+  - component: {fileID: 114754185609143254}
+  - component: {fileID: 114039951794166934}
+  - component: {fileID: 114245445222169258}
+  - component: {fileID: 114464951376725210}
+  m_Layer: 0
+  m_Name: WorldGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4885903063103794
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648382278930468}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 50, y: 50, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114039951794166934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648382278930468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bda8a192b58b473b83e3c238ef76e00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 1077735682978910, guid: e11a6aff0c22a4d9f8d206511a76108b,
+    type: 2}
+  instance: {fileID: 0}
+--- !u!114 &114245445222169258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648382278930468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f767822034d4742b7c63214009238a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  world: {fileID: 0}
+  isCalculating: 0
+  cellNbX: 6
+  cellNbY: 6
+  oldCellNbX: 0
+  oldCellNbY: 0
+--- !u!114 &114464951376725210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648382278930468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153c4657458c0492f80a2cfb5e740dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flatGrass: {fileID: 1033257195413128, guid: dbf138c8114fa477388a672422983b2b, type: 2}
+  palmTree: {fileID: 1588853107232546, guid: 425c5bba1cb594eeb95556b70fec520a, type: 2}
+  flatSea: {fileID: 1240686997977124, guid: b27b122e7f12e490ca76c98d56d09e55, type: 2}
+  beachSW: {fileID: 1091368468547810, guid: 3272b175b9335472faca27368176659a, type: 2}
+  beachNW: {fileID: 1966406366716288, guid: 3263935fb7ae14db3b14e11292891e8a, type: 2}
+  beachSE: {fileID: 1170470251953422, guid: 6256273a65a614c70b54420eec3700e6, type: 2}
+  beachNE: {fileID: 1679408998008210, guid: e1b69eb9bfad0422a9af73e9ed54434d, type: 2}
+  beachS: {fileID: 1321454567053012, guid: b933e5b1d962846378baa050c8e00c4b, type: 2}
+  beachN: {fileID: 1862138612895154, guid: 55b25811bf059422abc9d15a6051f332, type: 2}
+  beachE: {fileID: 1960555053700138, guid: 4a2899fcb57ef49d8b738441c8d1a9a5, type: 2}
+  beachW: {fileID: 1965182433383198, guid: c2aff7df8c4ef4488abc70ee404dab48, type: 2}
+  beachDesertS: {fileID: 1810650914687200, guid: 9cf98a4a185ac42c6a004f33cfce8611,
+    type: 2}
+  beachDesertN: {fileID: 1748065838109056, guid: 144f2df0bdd334cc498247b526c9f54f,
+    type: 2}
+  beachDesertE: {fileID: 1822698335643112, guid: 4f8c6bb0f7281430c965c1b1fc9136b1,
+    type: 2}
+  beachDesertW: {fileID: 1898252164824326, guid: c6afc0eabf3414fa5914cdb9e72f865c,
+    type: 2}
+  grassDesertS: {fileID: 1193612356630834, guid: f874b84d709c04a9c86aff793031213d,
+    type: 2}
+  grassDesertN: {fileID: 1146695923025346, guid: 54d51f5a2e5ba45f38088121f6df50ec,
+    type: 2}
+  grassDesertE: {fileID: 1761905011542884, guid: 445ed961f208e470a884ee7f14b08728,
+    type: 2}
+  grassDesertW: {fileID: 1263212566422402, guid: d4a87cd5786c74aa6bb52de01e5dc5f8,
+    type: 2}
+  grassDesertSW: {fileID: 1367269954160030, guid: 9cfa22da3c13b4f7bbb956f2c0264c2b,
+    type: 2}
+  grassDesertNW: {fileID: 1922120667339352, guid: 01ab58dfe431846df848cb90836009c9,
+    type: 2}
+  grassDesertSE: {fileID: 1243874182890286, guid: 6a6fff0aaea1f41cf89adc7deea859c8,
+    type: 2}
+  grassDesertNE: {fileID: 1633922286857708, guid: 5c5c2f2b852294a068ce4b761c694e97,
+    type: 2}
+  grassInnerDesertN: {fileID: 1723566489331516, guid: 7d35258e6fbeb4c11b38928a2242a6d1,
+    type: 2}
+  grassInnerDesertS: {fileID: 1549316613077590, guid: 73666b851887547c788112f12ea6326f,
+    type: 2}
+  grassInnerDesertW: {fileID: 1539403861027002, guid: fb41cc2b99ed740789a5c5daa8b28f8d,
+    type: 2}
+  grassInnerDesertE: {fileID: 1629481421993758, guid: fcf7ef6c3df054b40ac38861752f5ccb,
+    type: 2}
+  beachInnerW: {fileID: 1854967205616200, guid: 1794b31273cd44e81b385805af39a872,
+    type: 2}
+  beachInnerE: {fileID: 1496925249853786, guid: cd3b49279ae3a44e4908303b40ae5370,
+    type: 2}
+  beachInnerN: {fileID: 1933655641825572, guid: d41566ac00c2d43ec9790e2731bf1e6b,
+    type: 2}
+  smallGrassUpNE: {fileID: 1341112766081622, guid: 9fc0c7daf881748a9b9c1eb176687520,
+    type: 2}
+  smallGrassUpNW: {fileID: 1080818336089612, guid: 2964323d6dafd40419f17b786e6b6626,
+    type: 2}
+  smallGrassUpSE: {fileID: 1428967112254010, guid: 8913ea2aa37894a5bb681f6c7021de36,
+    type: 2}
+  smallGrassUpSW: {fileID: 1193516106804534, guid: 81409fbf8983940a6bd34a2f92d9c2a2,
+    type: 2}
+  bigGrassUpNE: {fileID: 1757179978871930, guid: f791271783e924bee89c70da9bf705cb,
+    type: 2}
+  bigGrassUpNW: {fileID: 1399251773407714, guid: c1e2f4c48f80749c3a08dbf264b852a1,
+    type: 2}
+  bigGrassUpSE: {fileID: 1087241303320582, guid: 99bfcc1d81b7545e0a82559771de14d7,
+    type: 2}
+  bigGrassUpSW: {fileID: 1408149093736448, guid: 0a2d6297c21f6477b9258d3b704a906c,
+    type: 2}
+  bigGrassUpS: {fileID: 1896486525599430, guid: fdd2e31f28d234925aa27d74993ac874,
+    type: 2}
+  bigGrassUpN: {fileID: 1320437536776552, guid: d3b9f4a24a83845e595abf4c998fc46e,
+    type: 2}
+  bigGrassUpE: {fileID: 1595288488514068, guid: 03b354772ea244f4081e35e4d82a3697,
+    type: 2}
+  bigGrassUpW: {fileID: 1979810862635572, guid: 523d9dbce0232468ca983fdda3678c6c,
+    type: 2}
+  filler: {fileID: 1013664857774362, guid: 3bff0c5072c9a4cb3a99e392e2dc9f08, type: 2}
+  fillerRiverSW: {fileID: 1360338076787620, guid: ce7097cb42ab043648bacd4edd57594d,
+    type: 2}
+  fillerRiverSE: {fileID: 1100393198813398, guid: cbe667e3269944579bb2a5adfee5c349,
+    type: 2}
+  riverHor: {fileID: 1572252582149942, guid: e8fb40f4949094284a0b4ecdffaf336e, type: 2}
+  riverVer: {fileID: 1128724093402858, guid: 1847da67fc0cc4834bf6023953ad6832, type: 2}
+  riverTurnE: {fileID: 1410689999514568, guid: caa5093176317483f9fdd9bee5b321f9, type: 2}
+  riverTurnW: {fileID: 1581467567089400, guid: c12f1473db57e43f89c7cbbbd0ba9a20, type: 2}
+  riverTurnN: {fileID: 1553135616671358, guid: f46bd4f2e5d9b4811b40538deed86108, type: 2}
+  riverTurnS: {fileID: 1654318049368350, guid: 33f0b29f946f447da954d7feec8fe4fa, type: 2}
+  riverCornerE: {fileID: 1736904403594902, guid: 97c3119a47a2942598b08afef95a910a,
+    type: 2}
+  riverCornerW: {fileID: 1363317891983792, guid: 87b77f4e6ec68434f974fe149f408d10,
+    type: 2}
+  riverCornerN: {fileID: 1781693563028478, guid: 50c659df3e6c24122ba19e02f624cf4c,
+    type: 2}
+  riverCornerS: {fileID: 1596755288776982, guid: 2f188b586f9674db6b818f0161a08330,
+    type: 2}
+  riverInnerCornerS: {fileID: 1577877808207922, guid: d28e1400014dd493ba3bde5580842f8c,
+    type: 2}
+  riverInnerCornerN: {fileID: 1559322714892176, guid: fba6a7d3174d7414e98a5857e22f99c7,
+    type: 2}
+  riverInnerCornerE: {fileID: 1513070640921980, guid: 07c5472db0bb74f9fa1dd8eaefe7d50f,
+    type: 2}
+  riverInnerCornerW: {fileID: 1286704331076256, guid: 6c1011bc234ef40d49c92207afdcd34c,
+    type: 2}
+  riverSE: {fileID: 1288027648222620, guid: f6989be91260f4d2e9d91d4370047679, type: 2}
+  riverNE: {fileID: 1648177531547940, guid: c0f22d9785dac4da093cfba83395a009, type: 2}
+  riverSW: {fileID: 1389601862131590, guid: 4050a194803014c0cba91cdaf62c5f5e, type: 2}
+  riverNW: {fileID: 1932301675798838, guid: e500b207d62274ecd8015912c037f2f2, type: 2}
+  smallRiverUpNE: {fileID: 1428680025454572, guid: f9c11112a23bc477ca6fc39a61facba9,
+    type: 2}
+  smallRiverUpNW: {fileID: 1791200940946628, guid: 43c01105d4a1a4e398317f871ba7a04d,
+    type: 2}
+  smallRiverUpSE: {fileID: 1195727323716560, guid: f1eb074f732954512a202f4df6f8f475,
+    type: 2}
+  smallRiverUpSW: {fileID: 1336910291716982, guid: e708b44c93c79498f91eb5486b00bd3e,
+    type: 2}
+  bigRiverUpNE: {fileID: 1763978322696630, guid: 7dc70b53e23da47a79d0cb7147b090fa,
+    type: 2}
+  bigRiverUpNW: {fileID: 1551653285238282, guid: f419b9a607efd4abd9e989a3207caf10,
+    type: 2}
+  bigRiverUpSE: {fileID: 1121911290057018, guid: 7df70584ab44246d585d9236f8d92061,
+    type: 2}
+  bigRiverUpSW: {fileID: 1801305356513910, guid: 167d73aa9467b430bb2652c62af8aa47,
+    type: 2}
+  trees:
+  - {fileID: 1217107478572596, guid: 10439ce14dfc04126b3a488e14946efa, type: 2}
+  - {fileID: 1717727256871402, guid: b03053005dda343c0adec6847dacd1f5, type: 2}
+  - {fileID: 1130358740289238, guid: 9ee1c295225ed406f86d139f2eb5886e, type: 2}
+  - {fileID: 1585528798744732, guid: dce14400231454088a78af83f989c803, type: 2}
+  - {fileID: 1084745721184178, guid: f5ce5c22f3b884d48913f763b4e6cb3e, type: 2}
+  - {fileID: 1176780360192502, guid: 9952ec731551b433b8f80457d0f206d9, type: 2}
+  - {fileID: 1788327000673320, guid: c4a499b5414b54c1c91b624907572096, type: 2}
+  - {fileID: 1739690467153660, guid: 64fb7f944ddd44f1a8556243fbec784e, type: 2}
+  sand: {fileID: 1746319724952932, guid: 8c3e2072a8432495f9d878171c865eed, type: 2}
+  stackDirt:
+  - {fileID: 1831708183378326, guid: 67525462f4b314b31a0cd11173b5ebd1, type: 2}
+  - {fileID: 1156059721259652, guid: 5377ec8f40a474436a70107727e0581b, type: 2}
+  - {fileID: 1838175606755352, guid: 6398251f4bf764bad93b75272eb5b592, type: 2}
+  - {fileID: 1305470227359492, guid: 967371268216147838a68ccc1d4970f4, type: 2}
+  - {fileID: 1904171535362158, guid: 3f77978b7e51f4a5aa51edf819cab79d, type: 2}
+  - {fileID: 1522983966123622, guid: 31aa512cf7b83404e855c2b5228adab9, type: 2}
+  stackWaterfallHor:
+  - {fileID: 1080362085572164, guid: 23fe0aac7373944dcb73721ed40e83b8, type: 2}
+  - {fileID: 1593580114787312, guid: 284a233b891ca4a32b1bcb9405dbe297, type: 2}
+  - {fileID: 1853688246441972, guid: b36d16555054a4d369113f0277d558a0, type: 2}
+  - {fileID: 1658095224143840, guid: 57f3f251f41914feb82da6db39dc4ba3, type: 2}
+  - {fileID: 1509920660685648, guid: 4362c6e20568d4f77821ada13e2bc900, type: 2}
+  - {fileID: 1692237704493232, guid: 30f0ec2bb24ab47a8b5f4e9fc7eef69d, type: 2}
+  stackWater:
+  - {fileID: 1240686997977124, guid: b27b122e7f12e490ca76c98d56d09e55, type: 2}
+  - {fileID: 1282628208638520, guid: 347136f2e5cb2462f8e56d0e1b61ce75, type: 2}
+  - {fileID: 1846398868881168, guid: de1581f30c8c242758625ae480f3a574, type: 2}
+  - {fileID: 1217900412630864, guid: 1279e7bde911a44f18398ab7e6ad0bbc, type: 2}
+  - {fileID: 1741691683791528, guid: cc2dd7a5352064d43b0fd1b0cba83c3b, type: 2}
+  - {fileID: 1801414520363660, guid: ff791fe0828a2438f94c3d3e2139d115, type: 2}
+  stackWaterfallVer:
+  - {fileID: 1799588941407622, guid: b75862629814647278bb4a5788f0ef7f, type: 2}
+  - {fileID: 1552807071690010, guid: f4a2391339e174cedb9024e0a61698cd, type: 2}
+  - {fileID: 1077970341651308, guid: 58892f9ec1012435fb34cbe3071ac11d, type: 2}
+  - {fileID: 1579777440170976, guid: 7227101db04734a429a92f8cce24cee3, type: 2}
+  - {fileID: 1552281893559732, guid: da97799e9cf6e4036b3c3491621cfa82, type: 2}
+  - {fileID: 1170455963703308, guid: b92d8b2f656ec453d95862bbac1fb2d2, type: 2}
+  showSeaTile: 0
+  seaLvl: 0.7
+  sizeX: 250
+  sizeY: 250
+  decalX: 0.65
+  decalY: 0.32
+  defaultZ: 0
+  highest: 7
+  inverseGranularity: 100
+  mountainsNumber: 30
+  desertNumber: 2
+  desertPercent: 10
+  forestPercent: 50
+  riversNb: 15
+  generateProgress: -1
+  generateProgressText: Shaping continents
+--- !u!114 &114515431822514804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648382278930468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09839cd42d35451c814dfdcb6266375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameRenderer: {fileID: 0}
+  gameInputs: {fileID: 0}
+  gameLoadingWorldUI: {fileID: 0}
+  forbidInputs: 0
+--- !u!114 &114754185609143254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648382278930468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38dba32c633c14b7993a577e759c738d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 0}
+  oldPosition: {x: 0, y: 0, z: 0}
+  maxUnzoom: 20
+  minUnzoom: 4
+  mouseWheelZoomMultiplier: 10
